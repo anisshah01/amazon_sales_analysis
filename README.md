@@ -323,7 +323,7 @@ Translating analytical findings into business insights and recommendations.
 
 Anisshah01
 
-GitHub: @anisshah01
+GitHub: [@anisshah01](https://github.com/anisshah01)
 
 # 📁 Repository Structure
 

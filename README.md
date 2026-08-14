@@ -8,17 +8,17 @@ The project analyzes sales performance, order trends, product categories, geogra
 
 ## 📌 Project Overview
 
-E-commerce businesses generate large volumes of transactional data that can be used to understand sales performance, customer demand and operational efficiency.
+E-commerce businesses generate large volumes of transactional data that can be used to understand sales performance and operational patterns.
 
-In this project, the Amazon Sales Report dataset was analyzed using Python to answer questions around:
+In this project, the Amazon Sale Report dataset was analyzed using Python to answer questions around:
 
-- How did sales perform over time?
+- How did sales perform over the available period?
 - Which product categories and sizes generated the most revenue?
 - Which cities and states contributed the most revenue?
 - Which SKUs generated the highest revenue?
 - How were orders distributed across different statuses?
-- How did fulfilment methods affect revenue?
-- What impact did promotions have on sales?
+- How did fulfilment methods contribute to revenue?
+- What patterns can be observed in promotional activity?
 - What operational patterns can be observed from courier and shipping data?
 
 ---
@@ -34,7 +34,7 @@ The main objectives of this project were to:
 5. Analyze geographic sales patterns.
 6. Examine fulfilment and courier performance.
 7. Analyze order status and promotional activity.
-8. Generate actionable business insights and recommendations.
+8. Generate business insights and recommendations.
 
 ---
 
@@ -46,7 +46,11 @@ The project uses the `Amazon Sale Report.csv` file from the following Kaggle dat
 
 The raw CSV is not included in this repository because of its file size.
 
-The analysis uses the Amazon Sales Report portion of the original dataset.
+The analysis specifically uses the `Amazon Sale Report.csv` file from the original dataset.
+
+### Dataset Source
+
+[🔗 Kaggle – Unlock Profits with E-Commerce Sales Data](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data/data?select=Amazon+Sale+Report.csv)
 
 ---
 
@@ -61,54 +65,56 @@ The analysis uses the Amazon Sales Report portion of the original dataset.
 
 ---
 
-## 🔄 Project Workflow
+# 🔄 Project Workflow
 
-### 1. Data Cleaning & Preparation
+## 1. 🧹 Data Cleaning & Preparation
 
-The raw dataset was inspected and prepared before analysis.
+The raw dataset was inspected and prepared before performing the analysis.
 
-Key steps included:
+Key cleaning steps included:
 
-- Inspecting dataset structure and data types
-- Identifying missing values
-- Handling missing values based on column context
-- Removing unnecessary columns
-- Converting date columns to datetime format
-- Cleaning categorical fields
-- Handling inconsistent/mixed data types
-- Preparing the dataset for analysis
-
----
-
-### 2. Exploratory Data Analysis
-
-The dataset was explored to understand:
-
-- Dataset dimensions
-- Column structure
-- Data types
-- Missing-value patterns
-- Date range
-- Unique categories
-- Order status distribution
-- Basic statistical characteristics
-
-The available transaction data covers approximately three months, from March 2022 to June 2022. Therefore, the project focuses primarily on short-term sales patterns rather than long-term time-series forecasting.
+- Inspecting dataset structure and data types.
+- Identifying missing values.
+- Handling missing values based on column context.
+- Removing unnecessary columns.
+- Converting the `Date` column to datetime format.
+- Cleaning categorical fields.
+- Handling inconsistent and mixed data types.
+- Preparing the dataset for further analysis.
 
 ---
 
-### 3. Sales Performance Analysis
+## 2. 🔎 Exploratory Data Analysis
+
+The dataset was explored to understand its structure and characteristics before performing detailed analysis.
+
+The EDA included:
+
+- Dataset dimensions.
+- Column structure.
+- Data types.
+- Missing-value patterns.
+- Date range.
+- Unique categories.
+- Order status distribution.
+- Basic statistical characteristics.
+
+The available transaction data covers approximately three months, from March 2022 to June 2022. Therefore, the analysis focuses primarily on short-term sales patterns rather than long-term time-series analysis.
+
+---
+
+# 3. 📈 Sales Performance Analysis
 
 Sales performance was analyzed across:
 
-- Daily revenue
-- Monthly revenue
-- Order volume
-- Revenue by category
-- Revenue by size
-- Revenue by state
-- Revenue by city
-- Top-performing SKUs
+- Daily revenue.
+- Monthly revenue.
+- Order volume.
+- Revenue by product category.
+- Revenue by size.
+- Revenue by state.
+- Revenue by city.
+- Top-performing SKUs.
 
 ### Key Observations
 
@@ -116,20 +122,26 @@ Sales performance was analyzed across:
 - Revenue declined to approximately ₹2.35 Cr in May and ₹2.05 Cr in June.
 - Revenue therefore followed the same downward pattern as order volume.
 - Sales were concentrated among a relatively small number of product categories and SKUs.
-- Geographic analysis showed that certain states and cities contributed substantially more revenue than others.
+- Certain cities and states contributed substantially more revenue than others.
+
+### Revenue Trend
+
+![Daily Revenue Trend](images/daily_revenue_trend.png)
+
+![Monthly Revenue Trend](images/monthly_revenue_trend.png)
 
 ---
 
-### 4. Product Analysis
+# 4. 📦 Product Analysis
 
 Product performance was analyzed using:
 
-- Category
-- Size
-- SKU
-- Style
+- Product category.
+- Size.
+- SKU.
+- Style.
 
-This helped identify the products and product groups contributing the most revenue.
+The analysis was used to identify products and product groups contributing most to overall revenue.
 
 ### Key Observations
 
@@ -137,14 +149,26 @@ This helped identify the products and product groups contributing the most reven
 - Product categories showed noticeable differences in revenue contribution.
 - Certain sizes generated substantially higher sales than others.
 
+### Revenue by Category
+
+![Revenue by Category](images/revenue_by_category.png)
+
+### Revenue by Size
+
+![Revenue by Size](images/revenue_by_size.png)
+
+### Top 10 SKUs
+
+![Top 10 SKUs by Revenue](images/top10_sku.png)
+
 ---
 
-### 5. Geographic Analysis
+# 5. 🌎 Geographic Analysis
 
 Revenue was analyzed by:
 
-- State
-- City
+- State.
+- City.
 
 This helped identify major revenue-generating markets and areas with comparatively lower sales contribution.
 
@@ -152,71 +176,67 @@ This helped identify major revenue-generating markets and areas with comparative
 
 - Revenue was concentrated in a limited number of states and cities.
 - Large urban markets contributed significantly to overall revenue.
-- Geographic concentration creates opportunities for targeted regional marketing and expansion.
+- Geographic concentration creates opportunities for targeted regional marketing and inventory planning.
+
+### Revenue by City
+
+![Revenue by City](images/revenue_by_city.png)
+
+### Revenue by State
+
+![Revenue by State](images/revenue_by_state.png)
 
 ---
 
-### 6. Fulfilment & Operations Analysis
+# 6. 🚚 Fulfilment & Operations Analysis
 
 Operational performance was examined through:
 
-- Fulfilment method
-- Courier status
-- Ship-service level
-- Order status
+- Fulfilment method.
+- Courier status.
+- Ship-service level.
+- Order status.
 
 ### Key Observations
 
 - Revenue contribution varied across fulfilment methods.
-- Order status analysis highlighted the proportion of successfully completed and cancelled orders.
+- Order-status analysis highlighted the distribution of order outcomes.
 - Courier-status analysis provided an indication of the operational outcome of shipped orders.
-- These patterns can help identify areas where fulfilment and delivery processes may require further investigation.
+- Ship-service-level analysis provided additional context for understanding fulfilment behaviour.
 
----
-
-### 7. Promotional Analysis
-
-Promotional activity was analyzed to understand its relationship with sales.
-
-The analysis examined orders and revenue associated with promotional activity.
-
-This can help evaluate whether promotional campaigns are concentrated around specific products or sales periods.
-
----
-
-## 📊 Visualizations
-
-### Revenue Trends
-
-![Daily Revenue Trend](images/daily_revenue_trend.png)
-
-![Monthly Revenue Trend](images/monthly_revenue_trend.png)
-
-### Order & Fulfilment Analysis
+### Order Status Distribution
 
 ![Order Status Distribution](images/order_status_distribution.png)
 
+### Revenue by Fulfilment
+
 ![Revenue by Fulfilment](images/revenue_and_fulfillment.png)
+
+### Revenue by Service Level
 
 ![Revenue by Service Level](images/revenue_and_service_level.png)
 
+### Revenue by Courier Status
+
 ![Revenue by Courier Status](images/revenue_by_courier_status.png)
 
-### Product Analysis
+---
 
-![Revenue by Category](images/revenue_by_category.png)
+# 7. 🎁 Promotional Analysis
 
-![Revenue by Size](images/revenue_by_size.png)
+Promotional activity was analyzed to understand how promotional orders were distributed and how they were associated with revenue.
 
-![Top 10 SKUs](images/top10_sku.png)
+The analysis examined:
 
-### Geographic Analysis
+- Promotional activity.
+- Revenue associated with promotional orders.
+- Distribution of sales across promotional segments.
 
-![Revenue by City](images/revenue_by_city.png)
+### Key Observation
 
-![Revenue by State](images/revenue_by_state.png)
+- Promotional activity was not evenly distributed, indicating that promotions were concentrated around particular products or sales segments.
 
-### Promotional Analysis
+### Revenue and Promotion
 
 ![Revenue and Promotion](images/revenue_and_promotion.png)
 
@@ -226,13 +246,13 @@ This can help evaluate whether promotional campaigns are concentrated around spe
 
 1. **Revenue declined during the analyzed period**, falling from approximately ₹2.57 Cr in April to ₹2.05 Cr in June.
 
-2. **Revenue and order volume followed a similar downward pattern**, suggesting that the decline was primarily driven by lower transaction activity.
+2. **Revenue and order volume followed a similar downward pattern**, indicating that lower transaction activity was associated with the decline in revenue.
 
 3. **Revenue was concentrated among specific products and categories**, making top-performing SKUs important contributors to overall sales.
 
 4. **Sales were geographically concentrated**, with a smaller number of cities and states contributing a significant portion of revenue.
 
-5. **Fulfilment and courier-status patterns provide operational insights** that can be used to investigate delivery and order-completion performance.
+5. **Fulfilment and courier-status patterns provide operational insights** that can be used to investigate order and delivery performance.
 
 6. **Promotional activity was not evenly distributed**, indicating that promotions may have been focused on particular products or sales segments.
 
@@ -244,7 +264,7 @@ Based on the analysis, the following actions could be considered:
 
 ### 1. Focus on High-Performing Products
 
-Identify and maintain sufficient inventory for top-performing SKUs and categories to avoid stock-outs.
+Maintain sufficient inventory for top-performing SKUs and categories to reduce the risk of stock-outs.
 
 ### 2. Investigate the Revenue Decline
 
@@ -272,16 +292,16 @@ Use historical product-level demand to improve stock allocation and reduce the r
 
 ---
 
-## ⚠️ Limitations
+# ⚠️ Limitations
 
 - The available dataset covers only a short period of approximately three months.
-- Therefore, long-term seasonality and year-over-year trends cannot be reliably evaluated.
+- Long-term seasonality and year-over-year trends cannot be reliably evaluated.
 - The analysis is primarily descriptive and does not establish causal relationships.
 - Additional business data such as advertising spend, inventory levels, customer acquisition cost and profit margins would enable deeper analysis.
 
 ---
 
-## 📁 Repository Structure
+# 📁 Repository Structure
 
 ```text
 amazon_sales_analysis/

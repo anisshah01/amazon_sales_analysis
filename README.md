@@ -126,9 +126,8 @@ Sales performance was analyzed across:
 
 ### Revenue Trend
 
-![Daily Revenue Trend](images/daily_revenue_trend.png)
-
 ![Monthly Revenue Trend](images/monthly_revenue_trend.png)
+![Daily Revenue Trend](images/daily_revenue_trend.png)
 
 ---
 
@@ -178,13 +177,13 @@ This helped identify major revenue-generating markets and areas with comparative
 - Large urban markets contributed significantly to overall revenue.
 - Geographic concentration creates opportunities for targeted regional marketing and inventory planning.
 
-### Revenue by City
-
-![Revenue by City](images/revenue_by_city.png)
-
 ### Revenue by State
 
 ![Revenue by State](images/revenue_by_state.png)
+
+### Revenue by City
+
+![Revenue by City](images/revenue_by_city.png)
 
 ---
 

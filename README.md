@@ -209,11 +209,11 @@ Operational performance was examined through:
 
 ### Revenue by Fulfilment
 
-![Revenue by Fulfilment](images/revenue_and_fulfillment.png)
+![Revenue by Fulfilment](images/revenue_and_fulfilment.png)
 
 ### Revenue by Service Level
 
-![Revenue by Service Level](images/revenue_and_service_level.png)
+![Revenue by Service Level](images/revenue_and_servie_level.png)
 
 ### Revenue by Courier Status
 

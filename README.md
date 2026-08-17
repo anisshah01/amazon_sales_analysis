@@ -232,7 +232,7 @@ The analysis examined:
 
 ### Key Observation
 
-- Promotional activity was not evenly distributed, indicating that promotions were concentrated around particular products or sales segments.
+- 74.1% of revenue is associated with promotional activities, while only 25.9% of revenue comes from non-promoted products or segments.
 
 ### Revenue and Promotion
 

@@ -138,7 +138,6 @@ Product performance was analyzed using:
 - Product category.
 - Size.
 - SKU.
-- Style.
 
 The analysis was used to identify products and product groups contributing most to overall revenue.
 
